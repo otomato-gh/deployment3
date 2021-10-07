@@ -7,7 +7,9 @@ print_title(){
 print_date(){
 	echo Date: $(date +'%d-%m-%Y %H-%M-%S')
 }
-# pass package name to function
+run_apache2() {
+	grep -x apache2 >/dev/null && echo "APACHE2 is running" || echo "APATCHE not running"
+}
 install_package(){
 	sudo apt-get install -y $1
 }
@@ -30,5 +32,6 @@ print_date
 apt_update
 install_package git
 install_package apache2
+run_apache2
 remove_old_site
 clone_website_code
