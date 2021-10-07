@@ -6,7 +6,7 @@ print_title(){
 }
 
 print_date(){
-	echo Date: $(date)
+	echo Date: $(date + '%d-%m-%Y %H-%M-%S')
 	echo "- - - - - - - - - - -"
 }
 run_apache2() {
