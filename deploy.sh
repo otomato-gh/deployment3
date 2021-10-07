@@ -10,7 +10,7 @@ print_date(){
 	echo "- - - - - - - - - - -"
 }
 run_apache2() {
-	grep -x apache2 >/dev/null && echo "APACHE2 is running" || echo "APATCHE not running"
+	pgrep -x apache2 >/dev/null && echo "APACHE2 is running" || echo "APATCHE not running"
 }
 install_package(){
 	sudo apt-get install -y $1
