@@ -5,7 +5,7 @@ print_title(){
 }
 
 print_date(){
-	echo Date: $(date +'%d-%m-%Y %H-%M-%S')
+	echo Date: $(date)
 }
 # pass package name to function
 install_package(){
