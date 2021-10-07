@@ -42,3 +42,5 @@ install_package apache2
 run_apache2
 remove_old_site
 clone_website_code
+
+echo "The end of script"
